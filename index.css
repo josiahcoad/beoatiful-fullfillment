@@ -1,0 +1,10 @@
+#orderCard {
+    background-color: #d6d6d6;
+    max-width: 500px;
+    max-height: 300px;
+    margin: 20px;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}

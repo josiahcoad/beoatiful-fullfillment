@@ -34,10 +34,12 @@ function markCompleted(orderId) {
 // DOM EDITING FUNCTIONS
 const makeOrderCard = (order) => (
     `<div id="orderCard">
-        <h3>${order.name}</h3>
-        <h6>${order.orderDate}</h6>
+        <h2>${order.name}</h2>
+        <h5>${order.orderDate}</h5>
         <ul>
-            ${order.ingredients.map(ingredient => `<li>${ingredient}</li>`)}
+            ${order.ingredients
+                .map(ingredient => `<li>${ingredient}</li>`)
+            .join('')}
         </ul>
         <button onclick="printLabel()">
             Print Label
