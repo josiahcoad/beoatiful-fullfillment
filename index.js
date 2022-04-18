@@ -1,54 +1,60 @@
 // BACKEND FUNCTIONS
-const orders = [{
-    name: 'Mary Jane',
-    orderDate: 'Apr 22',
-    ingredients: ['granola', 'apples', 'cherrys', 'pecans'],
-    phone: '2088192625',
-    orderId: 'jashddflikuyds8676'
-}]
+var orders = [
+  {
+    name: "Mary Jane",
+    orderDate: "Apr 22",
+    ingredients: ["granola", "apples", "cherrys", "pecans"],
+    phone: "2088192625",
+    orderId: "jashddflikuyds8676",
+  },
+];
 
 function getOrders() {
-    return orders;
+  return orders;
 }
 
 function getTodoOrders() {
-    return getOrders().filter(order => !order.isComplete)
+  return getOrders().filter((order) => !order.isComplete);
 }
 
 function printLabel(orderId) {
-    console.log('printed');
-    return true;
+  console.log("printed");
+  return true;
 }
 
 function markCompleted(orderId) {
-    console.log('Marked Completed!')
-    const [order] = orders.filter(order => order.orderId == orderId);
-    order['isCompleted'] = true;
+  console.log("Marked Completed!");
+  orders.forEach((order) => {
+    if (order.orderId == orderId) {
+        console.log(order)
+      order.isCompleted = true;
+    }
+  });
 
-    // We have to reload the frontend with the newly updated data
-    document.getElementById('ordersContainer').innerHTML = 
-        getTodoOrders().map(makeOrderCard).join('');
+  // We have to reload the frontend with the newly updated data
+  document.getElementById("ordersContainer").innerHTML = getTodoOrders()
+    .map(makeOrderCard)
+    .join("");
 }
 
-
 // DOM EDITING FUNCTIONS
-const makeOrderCard = (order) => (
-    `<div id="orderCard">
+const makeOrderCard = (order) =>
+  `<div id="orderCard">
         <h2>${order.name}</h2>
         <h5>${order.orderDate}</h5>
         <ul>
             ${order.ingredients
-                .map(ingredient => `<li>${ingredient}</li>`)
-            .join('')}
+              .map((ingredient) => `<li>${ingredient}</li>`)
+              .join("")}
         </ul>
         <button onclick="printLabel()">
             Print Label
         </button>
-        <button onclick="markCompleted(${order.orderId})">
+        <button onclick="markCompleted('${order.orderId}')">
             Mark Completed
         </button>
-    </div>`
-);
+    </div>`;
 
-document.getElementById('ordersContainer').innerHTML = 
-    getTodoOrders().map(makeOrderCard).join('');
+document.getElementById("ordersContainer").innerHTML = getTodoOrders()
+  .map(makeOrderCard)
+  .join("");
