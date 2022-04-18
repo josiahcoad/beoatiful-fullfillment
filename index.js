@@ -21,7 +21,10 @@ function getOrders() {
 }
 
 function getTodoOrders() {
-  return getOrders().filter((order) => !order.isCompleted);
+  return getOrders()
+            .filter((order) => !order.isCompleted)
+            .sort(order => order.orderDate)
+            .reverse();
 }
 
 function printLabel(orderId) {

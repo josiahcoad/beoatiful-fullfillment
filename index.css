@@ -1,6 +1,10 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 #orderCard {
     background-color: #d6d6d6;
-    max-width: 500px;
+    max-width: 400px;
     max-height: 300px;
     margin: 20px;
     padding-left: 40px;
