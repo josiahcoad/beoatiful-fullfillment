@@ -7,6 +7,13 @@ var orders = [
     phone: "2088192625",
     orderId: "jashddflikuyds8676",
   },
+  {
+    name: "Josiah Coad",
+    orderDate: "Apr 15",
+    ingredients: ["oats", "chocolate", "bananas", "chia seeds"],
+    phone: "2089796599",
+    orderId: "iadjdjd6f3dnddd09d",
+  },
 ];
 
 function getOrders() {
@@ -14,7 +21,7 @@ function getOrders() {
 }
 
 function getTodoOrders() {
-  return getOrders().filter((order) => !order.isComplete);
+  return getOrders().filter((order) => !order.isCompleted);
 }
 
 function printLabel(orderId) {
@@ -24,12 +31,8 @@ function printLabel(orderId) {
 
 function markCompleted(orderId) {
   console.log("Marked Completed!");
-  orders.forEach((order) => {
-    if (order.orderId == orderId) {
-        console.log(order)
-      order.isCompleted = true;
-    }
-  });
+  const idx = orders.findIndex(order => order.orderId == orderId);
+  orders[idx].isCompleted = true;
 
   // We have to reload the frontend with the newly updated data
   document.getElementById("ordersContainer").innerHTML = getTodoOrders()
