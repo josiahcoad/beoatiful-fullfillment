@@ -25,6 +25,10 @@ h5 {
     padding: auto;
 }
 
+h6 {
+    position: ;
+}
+
 ul {
     list-style-type:none;
     -moz-column-count: 2;
