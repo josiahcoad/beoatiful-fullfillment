@@ -43,8 +43,8 @@ ul {
 button {
     border: solid black;
     border-width: 1px;
-    border-radius: 6px;
-    font-size: auto;
+    border-radius: 4px;
+    font-size: small;
     margin: 0px 40px 0px 40px;
-    padding: 3px 5px 3px 5px;
+    padding: 3px 10px 3px 10px;
    }
