@@ -20,13 +20,14 @@ h2 {
     padding: auto;
 }
 
-h5 {
+h4 {
     margin: auto;
     padding: auto;
 }
 
-h6 {
-    position: ;
+h5 {
+    margin: auto;
+    padding: auto;
 }
 
 ul {
@@ -38,3 +39,12 @@ ul {
     column-count: 2;
     column-gap: 0px;
 }
+
+button {
+    border: solid black;
+    border-width: 1px;
+    border-radius: 6px;
+    font-size: auto;
+    margin: 0px 40px 0px 40px;
+    padding: 3px 5px 3px 5px;
+   }
