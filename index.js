@@ -50,7 +50,7 @@ const makeOrderCard = (order) =>
         <h5>${order.orderDate}</h5>
         <ul>
             ${order.ingredients
-              .map((ingredient) => `<li>${ingredient}</li>`)
+              .map((ingredient) => `<li><input type="checkbox">${ingredient}</li>`)
               .join("")}
         </ul>
         <button onclick="printLabel()">

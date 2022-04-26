@@ -12,3 +12,13 @@ body {
     padding-bottom: 20px;
     border-radius: 20px;
 }
+
+ul {
+    list-style-type:none;
+    -moz-column-count: 2;
+    -moz-column-gap: 0px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0px;
+    column-count: 2;
+    column-gap: 0px;
+}
