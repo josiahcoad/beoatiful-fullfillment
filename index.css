@@ -12,7 +12,17 @@ body {
     padding-bottom: 20px;
     border-radius: 20px;
     border-style: solid;
-    border-width: 2px;
+    border-width: 2px;.
+}
+
+h2 {
+    margin: auto;
+    padding: auto;
+}
+
+h5 {
+    margin: auto;
+    padding: auto;
 }
 
 ul {
