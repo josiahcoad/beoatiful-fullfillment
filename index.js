@@ -47,7 +47,8 @@ function markCompleted(orderId) {
 const makeOrderCard = (order) =>
   `<div id="orderCard">
         <h2>${order.name}</h2>
-        <h5>Order Date: ${order.orderDate}</br>Order ID: ${order.orderId}</h5>
+        <h4>Order Date: ${order.orderDate}</br>
+        <small>Order ID: ${order.orderId}</small></h4>
         <ul>
             ${order.ingredients
               .map((ingredient) => `<li><input type="checkbox">${ingredient}</li>`)
