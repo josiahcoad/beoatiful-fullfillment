@@ -1,9 +1,10 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #aaaaaa;
 }
 
 #orderCard {
-    background-color: #d6d6d6;
+    background-color: #ffffff;
     max-width: 400px;
     max-height: 300px;
     margin: 20px;
@@ -12,7 +13,7 @@ body {
     padding-bottom: 20px;
     border-radius: 20px;
     border-style: solid;
-    border-width: 2px;.
+    border-width: 2px;
 }
 
 h2 {
@@ -31,7 +32,9 @@ h5 {
 }
 
 ul {
-    list-style-type:none;
+
+    list-style-type: none;
+    padding: 0px;
     -moz-column-count: 2;
     -moz-column-gap: 0px;
     -webkit-column-count: 2;
@@ -41,10 +44,12 @@ ul {
 }
 
 button {
+    width: 48%;
     border: solid black;
-    border-width: 1px;
-    border-radius: 4px;
+    border-width: 1.2px;
+    border-radius: 8px;
+    background-color:lightgray;
     font-size: small;
-    margin: 0px 40px 0px 40px;
-    padding: 3px 10px 3px 10px;
+    margin: 0px 22px -3px -16px;
+    padding: 10px 20px;
    }
