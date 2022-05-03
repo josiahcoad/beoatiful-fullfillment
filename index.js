@@ -2,6 +2,7 @@
 var orders = [
   {
     name: "Mary Jane",
+    contactNumber: "555-555-1212",
     orderDate: "Apr 22",
     ingredients: ["granola", "apples", "cherrys", "pecans"],
     phone: "2088192625",
@@ -9,6 +10,7 @@ var orders = [
   },
   {
     name: "Josiah Coad",
+    contactNumber: "555-555-1212",
     orderDate: "Apr 15",
     ingredients: ["oats", "chocolate", "bananas", "chia seeds"],
     phone: "2089796599",
@@ -47,6 +49,7 @@ function markCompleted(orderId) {
 const makeOrderCard = (order) =>
   `<div id="orderCard">
         <h2>${order.name}</h2>
+        <h5>${order.contactNumber}</h5>
         <h4>Order Date:  ${order.orderDate}</br>
         <small>Order ID:  ${order.orderId}</small></h4>
         <ul>

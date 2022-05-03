@@ -5,11 +5,11 @@ body {
 
 #orderCard {
     background-color: #ffffff;
-    max-width: 400px;
-    max-height: 300px;
+    max-width: 325px;
+    max-height: 925px;
     margin: 20px;
-    padding-left: 40px;
-    padding-top: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
     border-radius: 20px;
     border-style: solid;
@@ -50,6 +50,6 @@ button {
     border-radius: 8px;
     background-color:lightgray;
     font-size: small;
-    margin: 0px 22px -3px -16px;
-    padding: 10px 20px;
+    margin: 0px 10px -3px -8px;
+    padding: 10px 0px;
    }
